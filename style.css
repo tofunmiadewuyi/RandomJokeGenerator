@@ -5,6 +5,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Inter', sans-serif;
 }
 
 *{
@@ -19,13 +20,11 @@ svg {
 
 img {
   align-self: center;
-  
 }
 
 p{
   color: var(--950, #0D2544);
   text-align: center;
-  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -33,20 +32,18 @@ p{
   opacity: 0;
 }
 
-.fade {
-  transition: 1.5s;
-  opacity: 1;
-}
-
 h1 {
   color: var(--950, #0D2544);
   text-align: center;
-  font-family: 'Inter', sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 40px; /* 125% */
   padding: 0 0 32px 0 ;
+}
+
+.emoji {
+  animation: bounce 2s ease-in-out infinite; /* Adjust the duration (2s) for a slower bounce */
 }
 
 button{
@@ -99,5 +96,38 @@ button:active {
   font-weight: 500;
   line-height: 16px;
   padding: 32px 0 0 0;
-  opacity: .51;
+  opacity: .50;
+}
+
+#joketype {
+  color: var(--950, #0D2544);
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  opacity: .50;
+}
+
+.hide-delivery {
+  display: none;
+}
+
+.show-delivery {
+  display: block;
+}
+
+.fade {
+  transition: 1.5s;
+  opacity: 1;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Start and end position (no vertical translation) */
+  }
+  50% {
+    transform: translateY(-20px); /* Peak of the bounce, translate element upward */
+  }
 }
