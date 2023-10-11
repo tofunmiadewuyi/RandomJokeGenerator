@@ -14,10 +14,6 @@ html {
   box-sizing: border-box;
 }
 
-svg {
-  display: block;
-}
-
 img {
   align-self: center;
 }
@@ -43,7 +39,9 @@ h1 {
 }
 
 .emoji {
-  animation: bounce 2s ease-in-out infinite; /* Adjust the duration (2s) for a slower bounce */
+  animation: bounce 3s ease-in-out infinite; /* Adjust the duration (2s) for a slower bounce */
+  width: 160px;
+  height: 160px;
 }
 
 button{
@@ -110,11 +108,11 @@ button:active {
   opacity: .50;
 }
 
-.hide-delivery {
+.hide {
   display: none;
 }
 
-.show-delivery {
+.show {
   display: block;
 }
 
